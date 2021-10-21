@@ -2,32 +2,52 @@
 <html lang="en">
 <head>
 <title>Barakanruine</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 <body>
 <div class="container">
         <!--creates a navigation bar with logo to the left, and links centered-->
 
-        <nav>
-            <a href="../homepage.html"><img id="logo" src="../images/logo.jpg" height=60px alt="logo" /></a>
-            <ul>
-            <li class="main"><a href="../apropos/apropos.html">A propos</a>
-                <ul>
-                <li class="sub"><a href="../apropos/staff.html">Qui sommes-nous ?</a></li>
-                </ul>
-            </li>
-            <li class="main"><a href="../prestations/prestations.html">Prestations</a></li>
-            <li class="main"><a href="../tarifs/tarifs.html">Tarifs</a></li>
-            <li class="main"><a href="../realisations/realisations.html">Réalisations et résultats</a></li>
-            <li class="main"><a href="../contact/contact.html">Contact</a>
-                <ul>
-                <li class="sub"><a href="../contact/localisation.html">Localisation</a></li>
-                </ul>
-            </li>
-            </ul>
-        </nav>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="../homepage.html"><img id="logo" src="../images/logo.jpg" height=60px alt="logo" /></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+              <ul class="navbar-nav">
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      A propos
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="../apropos/apropos.html">A propos</a>
+                      <a class="dropdown-item" href="../apropos/staff.html">Qui sommes-nous ?</a>
+                    </div>
+                  </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../prestations/prestations.html">Prestations</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="../tarifs/tarifs.html">Tarifs</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="../realisations/realisations.html">Réalisations et résultats</a>
+                  </li>
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      Contact
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                      <a class="dropdown-item" href="../contact/contact.html">Contact</a>
+                      <a class="dropdown-item" href="../contact/localisation.html">Localisation</a>
+                    </div>
+                  </li>
+              </ul>
+            </div>
+          </nav>
 
         <div class="container">
             <h1 class="page-header">Localisation</h1>
@@ -42,7 +62,7 @@
 
     </div>
 
-    <footer>copyright 2021<br></footer>
+    <footer class="bg-dark text-center text-white">copyright 2021<br></footer>
 </body>
 
 </html>
